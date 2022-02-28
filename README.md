@@ -1,3 +1,1 @@
-# code_signal_sol
-
-Code signal solution for practice that I did
+Repo I built to learn data structure and solve leetcode/ codesignal problems before interview
