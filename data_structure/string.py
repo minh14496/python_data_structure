@@ -1,0 +1,4 @@
+ord()
+chr()
+''.join()
+''.replace()
