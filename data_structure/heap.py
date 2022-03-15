@@ -35,3 +35,30 @@ def siftDown(currentIdx, endIdx, heap):
 
 def swap(i, j, array):
     array[i], array[j] = array[j], array[i]
+    
+def siftUp(self, currentIdx, heap):
+    # Write your code here.
+    parentIdx = (currentIdx - 1) // 2
+    while currentIdx > 0 and heap[currentIdx] < heap[parentIdx]:
+        self.swap(currentIdx, parentIdx, heap)
+        currentIdx = parentIdx
+        parentIdx = (currentIdx - 1) // 2
+
+def peek(self):
+    # Write your code here.
+    return self.heap[0]
+
+def remove(self):
+    # Write your code here.
+    self.swap(0, len(self.heap)-1, self.heap)
+    valueToRemove = self.heap.pop()
+    self.siftDown(0, self.heap)
+    return valueToRemove
+
+def insert(self, value):
+    # Write your code here.
+    self.heap.append(value)
+    self.siftUp(len(self.heap) - 1, self.heap)
+
+def swap(self, i, j, array):
+    array[i], array[j] = array[j], array[i]
